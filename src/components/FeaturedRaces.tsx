@@ -44,7 +44,7 @@ const FeaturedRaces = () => {
           
           <h2 className="text-3xl lg:text-4xl font-bold">
             Khám phá những
-            <span className="block bg-black text-white px-4 py-2 inline-block transform rotate-1 mt-2">
+            <span className="block bg-black text-white px-4 py-2 inline-block transform mt-2">
               trải nghiệm đặc biệt
             </span>
           </h2>

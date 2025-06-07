@@ -100,7 +100,7 @@ const RaceDetails = () => {
               
               <h1 className="text-4xl lg:text-5xl font-bold">
                 MĂNG ĐEN<br />
-                <span className="bg-black text-white px-4 py-2 inline-block transform -rotate-1">
+                <span className="bg-black text-white px-4 py-2 inline-block ">
                   LALA TRAIL
                 </span>
               </h1>

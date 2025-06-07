@@ -12,19 +12,19 @@ const Hero = () => {
 
   const slides = [
     {
-      image: "/images/hero/slide1.png",
+      image: "/images/hero/slide1.jpg",
       title: "Khám phá",
       subtitle: "Vẻ đẹp thiên nhiên",
       description: "Trải nghiệm những cung đường chạy bộ tuyệt đẹp qua rừng núi, biển cả và thành phố"
     },
     {
-      image: "/images/hero/slide2.png",
+      image: "/images/hero/slide2.jpg",
       title: "Thử thách",
       subtitle: "Bản thân",
       description: "Vượt qua giới hạn của chính mình với những giải chạy đầy thử thách"
     },
     {
-      image: "/images/hero/slide3.png",
+      image: "/images/hero/slide3.jpg",
       title: "Kết nối",
       subtitle: "Cộng đồng",
       description: "Gặp gỡ và chia sẻ đam mê với những người yêu thích chạy bộ"
@@ -80,7 +80,7 @@ const Hero = () => {
                 
                 <h1 className="text-4xl lg:text-6xl font-bold text-white">
                   {slides[currentSlide].title}<br />
-                  <span className="bg-black text-white px-4 py-2 inline-block transform -rotate-1">
+                  <span className="bg-black text-white px-4 py-2 inline-block ">
                     {slides[currentSlide].subtitle}
                   </span>
                 </h1>

@@ -67,7 +67,7 @@ const News = () => {
           
           <h2 className="text-4xl lg:text-5xl font-bold">
             Cập nhật<br />
-            <span className="bg-black text-white px-4 py-2 inline-block transform -rotate-1">
+            <span className="bg-black text-white px-4 py-2 inline-block ">
               mới nhất
             </span>
           </h2>
