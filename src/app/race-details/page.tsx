@@ -1,3 +1,6 @@
+"use client";
+
+import Link from 'next/link';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "../../components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../components/ui/tabs";
@@ -97,7 +100,7 @@ const RaceDetails = () => {
                 </div>
                 <span className="font-medium">CHI TIẾT GIẢI CHẠY</span>
               </div>
-              
+
               <h1 className="text-4xl lg:text-5xl font-bold">
                 MĂNG ĐEN<br />
                 <span className="bg-black text-white px-4 py-2 inline-block ">
@@ -160,9 +163,9 @@ const RaceDetails = () => {
                   <div>
                     <h2 className="text-2xl font-bold mb-4">Mô tả</h2>
                     <p className="text-gray-600">
-                      MĂNG ĐEN LALA TRAIL là giải chạy trail đầu tiên tại Kon Tum, 
-                      mang đến cho người tham gia trải nghiệm chạy bộ qua những cung đường 
-                      đẹp nhất của vùng đất Tây Nguyên. Với 3 cự ly 21KM, 10KM và 5KM, 
+                      MĂNG ĐEN LALA TRAIL là giải chạy trail đầu tiên tại Kon Tum,
+                      mang đến cho người tham gia trải nghiệm chạy bộ qua những cung đường
+                      đẹp nhất của vùng đất Tây Nguyên. Với 3 cự ly 21KM, 10KM và 5KM,
                       giải chạy phù hợp với mọi đối tượng từ người mới bắt đầu đến vận động viên chuyên nghiệp.
                     </p>
                   </div>
@@ -186,9 +189,11 @@ const RaceDetails = () => {
 
             {/* CTA Button */}
             <div className="text-center">
-              <Button size="lg" className="bg-black text-white hover:bg-gray-800">
-                Đăng ký ngay
-              </Button>
+              <Link href={`/race-registration`}>
+                <Button size="lg" className="bg-black text-white hover:bg-gray-800">
+                  Đăng ký ngay
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
