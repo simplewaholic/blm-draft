@@ -2,6 +2,7 @@
 
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
+import { Suspense } from 'react';
 import { Calendar, Clock, ArrowLeft, Share2, User, Eye } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -9,7 +10,7 @@ import { Badge } from '@/components/ui/badge';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
-const NewsDetail = () => {
+const NewsDetailsContent = () => {
   const searchParams = useSearchParams();
   const id = searchParams.get('id');
 
@@ -217,6 +218,21 @@ const NewsDetail = () => {
 
       <Footer />
     </div>
+  );
+};
+
+const NewsDetail = () => {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Đang tải...</p>
+        </div>
+      </div>
+    }>
+      <NewsDetailsContent />
+    </Suspense>
   );
 };
 

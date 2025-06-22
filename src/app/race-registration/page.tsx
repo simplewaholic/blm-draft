@@ -2,18 +2,18 @@
 
 import { useSearchParams } from 'next/navigation';
 import Link from 'next/link';
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { Calendar, MapPin, ArrowLeft, User } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import { Checkbox } from '@/components/ui/checkbox';
 
-const RaceRegistration = () => {
+const RaceRegistrationForm = () => {
   const searchParams = useSearchParams();
   const id = searchParams.get('id');
   const [selectedDistance, setSelectedDistance] = useState('');
@@ -411,6 +411,21 @@ const RaceRegistration = () => {
 
       <Footer />
     </div>
+  );
+};
+
+const RaceRegistration = () => {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900 mx-auto"></div>
+          <p className="mt-4 text-gray-600">Đang tải...</p>
+        </div>
+      </div>
+    }>
+      <RaceRegistrationForm />
+    </Suspense>
   );
 };
 
