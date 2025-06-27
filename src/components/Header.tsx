@@ -12,6 +12,7 @@ const Header = () => {
     { label: 'Giải chạy', href: '/races' },
     { label: 'Tin tức', href: '/news' },
     { label: 'Kết quả', href: '/results' },
+    { label: 'Nhà tài trợ', href: '/sponsors-and-partners' },
     { label: 'Liên hệ', href: '/contact' },
   ];
 
