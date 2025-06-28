@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "titleSlider1": "Discover",
+    "subTitleSlider1": "Natural Beauty",
+    "descriptionSlider1": "Experience stunning running trails through forests, seas, and cities",
+    "titleSlider2": "Challenge",
+    "subTitleSlider2": "Yourself",
+    "descriptionSlider2": "Push your limits with challenging",
+    "titleSlider3": "Connect",
+    "subTitleSlider3": "Community",
+    "descriptionSlider3": "Meet and share your passion with fellow running enthusiasts",
+    "races": "Races",
+    "discoverNow": "Discover now",
+    "registerNow": "Register now",
+    "detail": "Details"
+  },
+  "notFound": {
+    "title": "404 | Not Found",
+    "description": "This page could not be found.",
+    "returnHome": "Return home"
+  },
+  "menu": {
+    "home": "Home",
+    "races": "Races",
+    "news": "News",
+    "results": "Results",
+    "sponsorsPartners": "Sponsors and partners",
+    "contact": "Contact"
+  }
+}

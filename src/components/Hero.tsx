@@ -4,76 +4,47 @@ import { Button } from "@/components/ui/button";
 import { Play, Calendar, MapPin, ChevronRight } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-
-const slidesCard = [
-	{
-		image: "/images/hero/slide1.jpg",
-		title: "Khám phá",
-		subtitle: "Vẻ đẹp thiên nhiên",
-		description:
-			"Trải nghiệm những cung đường chạy bộ tuyệt đẹp qua rừng núi, biển cả và thành phố",
-	},
-	{
-		image: "/images/hero/slide2.jpg",
-		title: "Thử thách",
-		subtitle: "Bản thân",
-		description:
-			"Vượt qua giới hạn của chính mình với những giải chạy đầy thử thách",
-	},
-	{
-		image: "/images/hero/slide3.jpg",
-		title: "Kết nối",
-		subtitle: "Cộng đồng",
-		description: "Gặp gỡ và chia sẻ đam mê với những người yêu thích chạy bộ",
-	},
-];
+import { use, useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
 
 const Hero = () => {
+	const t = useTranslations("hero");
 	const isMobile = useIsMobile();
 	const [currentSlide, setCurrentSlide] = useState(0);
-	const [currentSlideCard, setCurrentSlideCard] = useState(0);
 
 	const slides = [
 		{
 			image: "/images/hero/slide1.jpg",
-			title: "Khám phá",
-			subtitle: "Vẻ đẹp thiên nhiên",
-			description:
-				"Trải nghiệm những cung đường chạy bộ tuyệt đẹp qua rừng núi, biển cả và thành phố",
+			title: t("titleSlider1"),
+			subtitle: t("subTitleSlider1"),
+			description: t("descriptionSlider1"),
 		},
 		{
 			image: "/images/hero/slide2.jpg",
-			title: "Thử thách",
-			subtitle: "Bản thân",
-			description:
-				"Vượt qua giới hạn của chính mình với những giải chạy đầy thử thách",
+			title: t("titleSlider2"),
+			subtitle: t("subTitleSlider2"),
+			description: t("descriptionSlider2"),
 		},
 		{
 			image: "/images/hero/slide3.jpg",
-			title: "Kết nối",
-			subtitle: "Cộng đồng",
-			description: "Gặp gỡ và chia sẻ đam mê với những người yêu thích chạy bộ",
+			title: t("titleSlider3"),
+			subtitle: t("subTitleSlider3"),
+			description: t("descriptionSlider3"),
 		},
 	];
 
 	useEffect(() => {
-		const timerCard = setInterval(() => {
-			setCurrentSlideCard((prev) => (prev + 1) % slidesCard.length);
-		}, 5000);
-
 		const timer = setInterval(() => {
 			setCurrentSlide((prev) => (prev + 1) % slides.length);
 		}, 5000);
 
 		return () => {
 			clearInterval(timer);
-			clearInterval(timerCard);
 		};
 	}, []);
 
 	return (
-		<section id="home" className="relative h-[90vh]">
+		<section id="home" className="relative h-[100vh]">
 			{/* Background Slides - Full size */}
 			<div className="absolute inset-0">
 				{slides.map((slide, index) => (
@@ -98,20 +69,20 @@ const Hero = () => {
 			{/* Content Container */}
 			<div className="relative h-full flex items-center">
 				<div className="container mx-auto px-4">
-					<div className="grid lg:grid-cols-2 gap-12 items-start max-w-7xl mx-auto">
+					<div className="grid lg:grid-cols-2 gap-5 md:gap-12 items-start max-w-7xl mx-auto">
 						{/* Left content */}
-						<div className="max-w-2xl pt-12">
-							<div className="space-y-6">
+						<div className="max-w-2xl pt-20 md:pt-12">
+							<div className="space-y-4 md:space-y-6">
 								<div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
 									<div className="section-circle w-8 h-8">
 										<span className="text-xs">🏃</span>
 									</div>
 									<span className="font-medium text-white">
-										GIẢI CHẠY
+										{t("races")}
 									</span>
 								</div>
 
-								<h1 className="text-4xl lg:text-6xl font-bold text-white">
+								<h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white">
 									{slides[currentSlide].title}
 									<br />
 									<span className="bg-black text-white px-4 py-2 inline-block ">
@@ -128,7 +99,7 @@ const Hero = () => {
 										size={isMobile ? "default" : "lg"}
 										className="bg-black text-white hover:bg-gray-800"
 									>
-										Khám phá ngay
+										{t("discoverNow")}
 										<ChevronRight className="ml-2 h-4 w-4" />
 									</Button>
 									{/* <Button size={isMobile ? "default" : "lg"} variant="outline" className="border-white text-white hover:bg-white/10">
@@ -152,10 +123,10 @@ const Hero = () => {
 									</div>
 
 									<div className="space-y-3">
-										<h3 className="text-xl font-semibold text-gray-900">
+										<h3 className="text-xl font-semibold text-gray-900 line-clamp-1">
 											{slides[currentSlide].title}
 										</h3>
-										<p className="text-gray-600">
+										<p className="text-gray-600 line-clamp-2">
 											{slides[currentSlide].description}
 										</p>
 
@@ -172,11 +143,11 @@ const Hero = () => {
 
 										<div className="flex justify-between items-center pt-2">
 											<Button variant="outline" size="sm">
-												Chi tiết{" "}
+												{t('detail')}{" "}
 												<ChevronRight className="h-4 w-4 ml-1" />
 											</Button>
 											<Button size="sm">
-												Đăng ký ngay{" "}
+												{t('registerNow')}{" "}
 												<Play className="h-4 w-4 ml-1" />
 											</Button>
 										</div>
