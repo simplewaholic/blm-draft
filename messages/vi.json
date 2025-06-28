@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "titleSlider1": "Khám phá",
+    "subTitleSlider1": "Vẻ đẹp thiên nhiên",
+    "descriptionSlider1": "Trải nghiệm những cung đường chạy bộ tuyệt đẹp qua rừng núi, biển cả và thành phố",
+    "titleSlider2": "Thử thách",
+    "subTitleSlider2": "Bản thân",
+    "descriptionSlider2": "Vượt qua giới hạn của chính mình với những giải chạy đầy thử thách",
+    "titleSlider3": "Kết nối",
+    "subTitleSlider3": "Cộng đồng",
+    "descriptionSlider3": "Gặp gỡ và chia sẻ đam mê với những người yêu thích chạy bộ",
+    "races": "Giải chạy",
+    "discoverNow": "Khám phá ngay",
+    "registerNow": "Đăng ký ngay",
+    "detail": "Chi tiết"
+  },
+  "notFound": {
+    "title": "404 | Not Found",
+    "description": "Trang này không thể được tìm thấy.",
+    "returnHome": "Trở về trang chủ"
+  },
+  "menu": {
+    "home": "Trang chủ",
+    "races": "Giải chạy",
+    "news": "Tin tức",
+    "results": "Results",
+    "sponsorsPartners": "Nhà tài trợ",
+    "contact": "Liên hệ"
+  }
+}
