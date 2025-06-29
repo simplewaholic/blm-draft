@@ -32,7 +32,7 @@ const Results = () => {
     },
     {
       id: 2,
-      name: "Trần Thị B", 
+      name: "Trần Thị B",
       bib: "1002",
       phone: "0907654321",
       event: "Marathon 2024",
@@ -44,7 +44,7 @@ const Results = () => {
     {
       id: 3,
       name: "Lê Minh C",
-      bib: "1003", 
+      bib: "1003",
       phone: "0912345678",
       event: "Marathon 2024",
       category: "Nam - 21K",
@@ -56,7 +56,7 @@ const Results = () => {
       id: 4,
       name: "Hoàng Văn D",
       bib: "2001",
-      phone: "0923456789", 
+      phone: "0923456789",
       event: "Night Run",
       category: "Nam - 5K",
       time: "18:45",
@@ -68,7 +68,7 @@ const Results = () => {
       name: "Nguyễn Thị E",
       bib: "2002",
       phone: "0934567890",
-      event: "Night Run", 
+      event: "Night Run",
       category: "Nữ - 5K",
       time: "21:32",
       rank: 2,
@@ -94,7 +94,7 @@ const Results = () => {
     {
       id: 2,
       name: "Moutain Marathon",
-      date: "28 Tháng 9, 2024", 
+      date: "28 Tháng 9, 2024",
       location: "Hà Nội",
       participants: 2150,
       status: "Hoàn thành",
@@ -108,7 +108,7 @@ const Results = () => {
       id: 3,
       name: "Jungle Marathon",
       date: "10 Tháng 9, 2024",
-      location: "Đà Nẵng", 
+      location: "Đà Nẵng",
       participants: 1890,
       status: "Hoàn thành",
       topResults: [
@@ -120,16 +120,16 @@ const Results = () => {
   ];
 
   const getRankColor = (rank: number) => {
-    switch(rank) {
+    switch (rank) {
       case 1: return "bg-yellow-100 text-yellow-800";
-      case 2: return "bg-gray-100 text-gray-800"; 
+      case 2: return "bg-gray-100 text-gray-800";
       case 3: return "bg-orange-100 text-orange-800";
       default: return "bg-blue-100 text-blue-800";
     }
   };
 
   const getRankIcon = (rank: number) => {
-    switch(rank) {
+    switch (rank) {
       case 1: return "🥇";
       case 2: return "🥈";
       case 3: return "🥉";
@@ -148,82 +148,24 @@ const Results = () => {
             </div>
             <span className="font-medium">KẾT QUẢ GIẢI CHẠY</span>
           </div>
-          
+
           <h2 className="text-4xl lg:text-5xl font-bold">
             Tra cứu<br />
             <span className="bg-black text-white px-4 py-2 inline-block transform">
               kết quả
             </span>
           </h2>
-          
+
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Tìm kiếm kết quả thi đấu, chứng nhận tham gia và hình ảnh từ các sự kiện 
+            Tìm kiếm kết quả thi đấu, chứng nhận tham gia và hình ảnh từ các sự kiện
             đã diễn ra. Tất cả đều được lưu trữ và cập nhật đầy đủ.
           </p>
         </div>
 
-
-      
-
-
-        {/* Search Section */}
-        {/* <div className="bg-gray-300 rounded-2xl p-8 mb-12">
-          <div className="max-w-2xl mx-auto space-y-6">
-            <h3 className="text-xl font-bold text-center">Tìm kiếm kết quả của bạn</h3>
-            
-            <div className="space-y-4">
-              <Select value={searchType} onValueChange={setSearchType}>
-                <SelectTrigger className="h-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-black">
-                  <SelectValue placeholder="Chọn loại tìm kiếm" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="name">
-                    <div className="flex items-center space-x-2">
-                      <User size={16} />
-                      <span>Theo tên</span>
-                    </div>
-                  </SelectItem>
-                  <SelectItem value="bib">
-                    <div className="flex items-center space-x-2">
-                      <Hash size={16} />
-                      <span>Số BIB</span>
-                    </div>
-                  </SelectItem>
-                  <SelectItem value="phone">
-                    <div className="flex items-center space-x-2">
-                      <Phone size={16} />
-                      <span>Số điện thoại</span>
-                    </div>
-                  </SelectItem>
-                </SelectContent>
-              </Select>
-              
-              <div className="grid md:grid-cols-2 gap-4">
-                <input
-                  type="text"
-                  placeholder={searchType === 'name' ? 'Nhập tên của bạn' : searchType === 'bib' ? 'Nhập số BIB' : 'Nhập số điện thoại'}
-                  className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black"
-                />
-                <select className="px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-black">
-                  <option>Chọn sự kiện</option>
-                  <option>Marathon 2024</option>
-                  <option>Night Run</option>
-                  <option>Sheena Ultra Challenge</option>
-                </select>
-              </div>
-              
-              <Button className="bg-black text-white hover:bg-gray-800 h-12 w-full">
-                <Search className="mr-2" size={18} />
-                Tìm kiếm
-              </Button>
-            </div>
-          </div>
-        </div> */}
-
-<div className="bg-gray-50 rounded-2xl p-8 mb-12">
+        <div className="bg-gray-50 rounded-2xl p-8 mb-12">
           <div className="max-w-4xl mx-auto space-y-6">
-            <h3 className="text-xl font-bold text-center">Tìm kiếm kết quả chi tiết</h3>
-            
+            {/* <h3 className="text-xl font-bold text-center">Tìm kiếm kết quả</h3> */}
+
             <div className="grid md:grid-cols-5 gap-4">
               <Select value={searchType} onValueChange={setSearchType}>
                 <SelectTrigger>
@@ -254,8 +196,8 @@ const Results = () => {
               <Input
                 placeholder={
                   searchType === 'name' ? "Nhập họ và tên" :
-                  searchType === 'bib' ? "Nhập số BIB" :
-                  "Nhập số điện thoại"
+                    searchType === 'bib' ? "Nhập số BIB" :
+                      "Nhập số điện thoại"
                 }
               />
 
@@ -273,7 +215,7 @@ const Results = () => {
                 </SelectContent>
               </Select>
 
-              <Button 
+              <Button
                 className="bg-black text-white hover:bg-gray-800 h-12 md:col-span-2"
               >
                 {false ? (
@@ -292,17 +234,17 @@ const Results = () => {
           </div>
         </div>
 
-        
 
-           {/* Search Results */}
-           {isClient && searchResults.length > 0 && (
+
+        {/* Search Results */}
+        {isClient && searchResults.length > 0 && (
           <div className="mb-12">
             <Card>
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-6">
                   Kết quả tìm kiếm ({searchResults.length} kết quả)
                 </h3>
-                
+
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
                     <thead>

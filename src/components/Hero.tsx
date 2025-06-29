@@ -1,15 +1,17 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Play, Calendar, MapPin, ChevronRight } from "lucide-react";
+import { Play, Calendar, MapPin, ChevronRight, Link } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import Image from "next/image";
 import { use, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
 	const t = useTranslations("hero");
 	const isMobile = useIsMobile();
+	const router = useRouter();
 	const [currentSlide, setCurrentSlide] = useState(0);
 
 	const slides = [
@@ -71,43 +73,45 @@ const Hero = () => {
 				<div className="container mx-auto px-4">
 					<div className="grid lg:grid-cols-2 gap-5 md:gap-12 items-start max-w-7xl mx-auto">
 						{/* Left content */}
-						<div className="max-w-2xl pt-20 md:pt-12">
-							<div className="space-y-4 md:space-y-6">
-								<div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
-									<div className="section-circle w-8 h-8">
-										<span className="text-xs">🏃</span>
+						{!isMobile && (
+							<div className="max-w-2xl pt-20 md:pt-12">
+								<div className="space-y-4 md:space-y-6">
+									<div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full">
+										<div className="section-circle w-8 h-8">
+											<span className="text-xs">🏃</span>
+										</div>
+										<span className="font-medium text-white">
+											{t("races")}
+										</span>
 									</div>
-									<span className="font-medium text-white">
-										{t("races")}
-									</span>
-								</div>
 
-								<h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white">
-									{slides[currentSlide].title}
-									<br />
-									<span className="bg-black text-white px-4 py-2 inline-block ">
-										{slides[currentSlide].subtitle}
-									</span>
-								</h1>
+									<h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-white">
+										{slides[currentSlide].title}
+										<br />
+										<span className="bg-black text-white px-4 py-2 inline-block ">
+											{slides[currentSlide].subtitle}
+										</span>
+									</h1>
 
-								<p className="text-white/90 text-lg max-w-xl">
-									{slides[currentSlide].description}
-								</p>
+									<p className="text-white/90 text-lg max-w-xl">
+										{slides[currentSlide].description}
+									</p>
 
-								<div className="flex flex-wrap gap-4">
-									<Button
-										size={isMobile ? "default" : "lg"}
-										className="bg-black text-white hover:bg-gray-800"
-									>
-										{t("discoverNow")}
-										<ChevronRight className="ml-2 h-4 w-4" />
-									</Button>
-									{/* <Button size={isMobile ? "default" : "lg"} variant="outline" className="border-white text-white hover:bg-white/10">
+									<div className="flex flex-wrap gap-4">
+										<Button
+											size={isMobile ? "default" : "lg"}
+											className="bg-black text-white hover:bg-gray-800"
+										>
+											{t("discoverNow")}
+											<ChevronRight className="ml-2 h-4 w-4" />
+										</Button>
+										{/* <Button size={isMobile ? "default" : "lg"} variant="outline" className="border-white text-white hover:bg-white/10">
                     Tìm hiểu thêm
                   </Button> */}
+									</div>
 								</div>
 							</div>
-						</div>
+						)}
 
 						{/* Right content - Optimized size */}
 						<div className={`relative ${isMobile ? "z-10" : ""}`}>
@@ -142,11 +146,17 @@ const Hero = () => {
 										</div>
 
 										<div className="flex justify-between items-center pt-2">
-											<Button variant="outline" size="sm">
+											<Button 
+												variant="outline" 
+												size="sm"
+												onClick={() => router.push('/race-details')}
+											>
 												{t('detail')}{" "}
 												<ChevronRight className="h-4 w-4 ml-1" />
 											</Button>
-											<Button size="sm">
+											<Button 
+											size="sm"
+											onClick={() => router.push('/race-registration')}>
 												{t('registerNow')}{" "}
 												<Play className="h-4 w-4 ml-1" />
 											</Button>

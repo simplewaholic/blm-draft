@@ -128,7 +128,7 @@ const RaceRegistrationForm = () => {
           <div className="max-w-6xl mx-auto">
             {/* Navigation */}
             <div className="mb-8">
-              <Link href={`/races/${id}`} className="inline-flex items-center space-x-2 text-gray-600 hover:text-black transition-colors">
+              <Link href={`/race-details`} className="inline-flex items-center space-x-2 text-gray-600 hover:text-black transition-colors">
                 <ArrowLeft size={20} />
                 <span>Quay lại chi tiết giải chạy</span>
               </Link>

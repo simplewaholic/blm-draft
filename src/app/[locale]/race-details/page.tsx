@@ -21,7 +21,7 @@ const RaceDetails = () => {
     date: "15 Tháng 12, 2024",
     location: "Kon Tum - Măng Đen",
     status: "Đang mở đăng ký",
-    edition: "Lần thứ 3",
+    edition: "Lần thứ 1",
     image: "bg-gradient-to-br from-green-600 to-emerald-700"
   };
 
@@ -362,7 +362,7 @@ const RaceDetails = () => {
                   <span>{raceData.location}</span>
                 </div>
               </div>
-              <Link href={`/race/1/register`}>
+              <Link href={`/race-registration`}>
                 <Button size="lg" className="bg-white text-black hover:bg-gray-100 mt-4">
                   Đăng ký ngay
                 </Button>
@@ -558,7 +558,7 @@ const RaceDetails = () => {
                     <p className="text-yellow-700 mb-4">
                       Số lượng có hạn. Đăng ký sớm để được ưu đãi giá Early Bird và đảm bảo suất tham gia.
                     </p>
-                    <Link href={`/race/1/register`}>
+                    <Link href={`/race-registration`}>
                       <Button className="bg-black text-white hover:bg-gray-800">
                         Đăng ký ngay
                       </Button>
