@@ -126,7 +126,7 @@ const SponsorsAndPartnersPage = () => {
         <h2 className="text-4xl lg:text-5xl font-bold">
           Cảm ơn các
           <br />
-          <span className="bg-black text-white px-4 py-2 inline-block transform rotate-1">
+          <span className="bg-black text-white px-4 py-2 inline-block">
             nhà tài trợ
           </span>
         </h2>
@@ -140,12 +140,6 @@ const SponsorsAndPartnersPage = () => {
       {/* Sponsor */}
       <section className="py-10 bg-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Nhà tài trợ</h2>
-            <p className="text-gray-600">
-              Chúng tôi xin gửi lời cảm ơn chân thành đến những nhãn hàng đã đồng hành cùng Măng Đen Trail trong suốt thời gian qua.
-            </p>
-          </div>
 
           <div className="max-w-5xl mx-auto">
             <div className="text-center">
@@ -262,7 +256,7 @@ const SponsorsAndPartnersPage = () => {
                   size="lg"
                   className="bg-white hover:bg-gray-100 text-black hover:text-gray-500"
                 >
-                  Liên hệ tài trợ
+                  Liên hệ
                 </Button>
               </a>
               <a download href={"/documents/MangDen_Proposal.jpg"}>
@@ -271,7 +265,7 @@ const SponsorsAndPartnersPage = () => {
                   variant="outline"
                   className="bg-white hover:bg-gray-100 text-black hover:text-gray-500"
                 >
-                  Tải hồ sơ tài trợ
+                  Quyền lợi đối tác
                 </Button>
               </a>
             </div>

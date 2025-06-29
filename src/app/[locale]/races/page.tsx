@@ -22,7 +22,7 @@ const Events = () => {
       date: "15 Tháng 3, 2025",
       location: "Đà Nẵng",
       participants: "1.800+",
-      status: "Sắp mở",
+      status: "Đang mở đăng ký",
       price: "420.000đ",
       image: "bg-gradient-to-br from-green-500 to-teal-600",
       distances: ["10K", "21K", "42K"]
@@ -33,7 +33,7 @@ const Events = () => {
       date: "28 Tháng 4, 2025",
       location: "TP. Hồ Chí Minh",
       participants: "3.200+",
-      status: "Early Bird",
+      status: "Đang mở đăng ký",
       price: "280.000đ",
       image: "bg-gradient-to-br from-orange-500 to-red-600",
       distances: ["5K", "10K"]
@@ -54,7 +54,7 @@ const Events = () => {
           
           <h2 className="text-4xl lg:text-5xl font-bold">
             Tham gia ngay<br />
-            <span className="bg-black text-white px-4 py-2 inline-block transform rotate-1">
+            <span className="bg-black text-white px-4 py-2 inline-block transform">
               các sự kiện
             </span>
           </h2>
@@ -95,10 +95,6 @@ const Events = () => {
                   <div className="flex items-center space-x-2">
                     <MapPin size={16} />
                     <span>{event.location}</span>
-                  </div>
-                  <div className="flex items-center space-x-2">
-                    <Users size={16} />
-                    <span>{event.participants} người tham gia</span>
                   </div>
                 </div>
 

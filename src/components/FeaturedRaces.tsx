@@ -23,7 +23,7 @@ const FeaturedRaces = () => {
       title: "Măng Đen Forest Run",
       date: "20 Tháng 2, 2025",
       location: "Kon Tum - Măng Đen",
-      status: "Sắp mở",
+      status: "Đang mở đăng ký",
       price: "450.000đ",
       image: "bg-gradient-to-br from-blue-600 to-cyan-700",
       distances: ["10K", "21K"],

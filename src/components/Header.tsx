@@ -29,7 +29,7 @@ const Header = () => {
   const navItems = [
     { label: t("home"), href: "/" },
     { label: t("races"), href: "/races" },
-    { label: t("news"), href: "/news" },
+    // { label: t("news"), href: "/news" },
     { label: t("results"), href: "/results" },
     { label: t("sponsorsPartners"), href: "/sponsors-and-partners" },
     { label: t("contact"), href: "/contact" },
@@ -101,7 +101,9 @@ const Header = () => {
               </Link>
             ))}
           </nav>
-          <div className="hidden lg:flex items-center justify-center">
+
+          {/* Language Selector - Moved to far right */}
+          <div className="hidden lg:flex items-center">
             <DropdownMenu modal={false}>
               <DropdownMenuTrigger
                 className={cn("uppercase text-sm cursor-pointer text-dark font-medium")}
@@ -121,13 +123,6 @@ const Header = () => {
                 ))}
               </DropdownMenuContent>
             </DropdownMenu>
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            {/* <Button className="bg-black text-white hover:bg-gray-800">
-              Đăng ký ngay
-            </Button> */}
           </div>
 
           {/* Mobile Menu Button */}
