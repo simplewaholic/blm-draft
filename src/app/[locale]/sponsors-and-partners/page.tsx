@@ -217,9 +217,9 @@ const SponsorsAndPartnersPage = () => {
             {partners.map((partner, index) => (
               <div
                 key={`partner-${index}`}
-                className={`grid grid-cols-1 md:grid-cols-2 mb-2 ${partner.logo.length <= 2 ? "items-center" : ""}`}
+                className={`grid grid-cols-1 md:grid-cols-2 mb-5 md:mb-2 ${partner.logo.length <= 2 ? "items-center" : ""}`}
               >
-                <p className={`font-semibold ${partner.logo.length > 2 ? "mt-8" : ""}`}>{partner.title}</p>
+                <p className={`text-center mb-2 md:mb-0 md:text-left font-semibold ${partner.logo.length > 2 ? "mt-8" : ""}`}>{partner.title}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   {partner.logo.map((logo, logoIndex) => (
                     <div key={`partner-logo-${index}-${logoIndex}`}>
