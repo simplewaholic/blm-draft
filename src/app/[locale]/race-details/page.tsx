@@ -513,1218 +513,465 @@ const RaceDetails = () => {
         </div>
       </section>
 
-      <div className="lg:hidden mx-auto flex justify-center items-center mb-2">
-        <div className="bg-white p-6 shadow-md mt-2 relative z-10 rounded-lg">
-          <div className="space-y-2 lg:mb-8 lg:mt-4">
-            <div className="flex flex-col lg:flex-col-reverse">
-              <div className="font-bold text-base lg:text-4xl">
-                Măng Đen LaLa Trail
-              </div>
-              {/* <div className="flex flex-row space-x-1">
-                <div className="text-primary-700 border-primary-700 border-[1.5px] rounded-full py-1 px-4 text-xs font-bold lg:text-sm">
-                  Mở đăng ký
-                </div>
-                <div className="text-primary-700 border-primary-700 border-[1.5px] rounded-full py-1 px-4 text-xs font-bold lg:text-sm">
-                  ULTRA TRAIL RACE
-                </div>
-              </div> */}
+
+      {/* Main Content */}
+      <div className="lg:container ps-4 pe-4 pb-2 pt-4 md:py-5">
+        <div className="w-full space-y-16 pt-5 lg:pt-10">
+          {/* Overview Section */}
+          <div className="">
+            <div className="font-bold text-xl hover:no-underline pb-3">
+              Giới thiệu giải chạy
             </div>
-            <div className="flex flex-row items-center space-x-2 text-[#344054] text-base">
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth="0"
-                viewBox="0 0 24 24"
-                color="#1D2939"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-                style={{ color: "rgb(29, 41, 57)" }}
-              >
-                <g id="Calendar">
-                  <path
-                    d="M18.438,4.954H16.5c0-0.346,0-0.691,0-1.036c0-0.124,0-0.248,0-0.372c0-0.262-0.23-0.512-0.5-0.5
-            c-0.271,0.012-0.5,0.22-0.5,0.5c0,0.469,0,0.939,0,1.408h-7c0-0.346,0-0.691,0-1.036c0-0.124,0-0.248,0-0.372
-            c0-0.262-0.23-0.512-0.5-0.5c-0.271,0.012-0.5,0.22-0.5,0.5c0,0.469,0,0.939,0,1.408H5.562c-1.378,0-2.5,1.122-2.5,2.5v11
-            c0,1.379,1.122,2.5,2.5,2.5h12.875c1.379,0,2.5-1.121,2.5-2.5v-11C20.938,6.076,19.816,4.954,18.438,4.954z M5.562,5.954H7.5
-            c0,0.073,0,0.147,0,0.22c0,0.124,0,0.248,0,0.372c0,0.262,0.23,0.512,0.5,0.5c0.271-0.012,0.5-0.22,0.5-0.5c0-0.197,0-0.394,0-0.592
-            h7c0,0.073,0,0.147,0,0.22c0,0.124,0,0.248,0,0.372c0,0.262,0.23,0.512,0.5,0.5c0.271-0.012,0.5-0.22,0.5-0.5
-            c0-0.197,0-0.394,0-0.592h1.937c0.827,0,1.5,0.673,1.5,1.5v1.584H4.062V7.454C4.062,6.627,4.735,5.954,5.562,5.954z M18.438,19.954
-            H5.562c-0.827,0-1.5-0.673-1.5-1.5v-8.416h15.875v8.416C19.938,19.281,19.265,19.954,18.438,19.954z"
-                  ></path>
-                </g>
-              </svg>
-              <div>19:00 06/03 → 22:00 07/03/2026</div>
-            </div>
-            <div className="flex flex-row items-center space-x-2 text-[#344054] text-base">
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                strokeWidth="0"
-                viewBox="0 0 24 24"
-                color="#1D2939"
-                height="1em"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-                style={{ color: "rgb(29, 41, 57)" }}
-              >
-                <g id="Location_On">
-                  <g>
-                    <path d="M12,21.933a1.715,1.715,0,0,1-1.384-.691L5.555,14.5a7.894,7.894,0,1,1,12.885-.009L13.385,21.24A1.717,1.717,0,0,1,12,21.933ZM11.992,3.066A6.81,6.81,0,0,0,7.414,4.815a6.891,6.891,0,0,0-1.05,9.1l5.051,6.727a.725.725,0,0,0,.584.292h0a.732.732,0,0,0,.586-.292l5.044-6.734A6.874,6.874,0,0,0,12.81,3.113,7.277,7.277,0,0,0,11.992,3.066Z"></path>
-                    <path d="M12,12.5A2.5,2.5,0,1,1,14.5,10,2.5,2.5,0,0,1,12,12.5Zm0-4A1.5,1.5,0,1,0,13.5,10,1.5,1.5,0,0,0,12,8.5Z"></path>
-                  </g>
-                </g>
-              </svg>
-              <div>Thị trấn Măng Đen, Huyện Kon Plông, tỉnh Kon Tum</div>
-            </div>
-          </div>
-          <div className="border-y border-black border-dashed py-4 mt-4 space-y-3">
             <div>
-              <div className="text-sm font-medium text-gr-500 capitalize">
-                <div>
-                  <div>
-                    <div className="flex">
-                      <div className="flex gap-3 mx-auto">
-                        <div className="bg-orange-500 rounded p-1 w-12 h-1w-12 text-white text-lg flex items-center justify-center">
-                          <div className="text-center">
-                            <p>{months}</p>
-                            <p className="text-xs leading-3">tháng</p>
-                          </div>
-                        </div>
-                        <div className="bg-orange-500 rounded p-1 w-12 h-1w-12 text-white text-lg flex items-center justify-center">
-                          <div className="text-center">
-                            <p>{days}</p>
-                            <p className="text-xs leading-3">ngày</p>
-                          </div>
-                        </div>
-                        <div className="bg-orange-500 rounded p-1 w-12 h-1w-12 text-white text-lg flex items-center justify-center">
-                          <div className="text-center">
-                            <p>{hours}</p>
-                            <p className="text-xs leading-3">giờ</p>
-                          </div>
-                        </div>
-                        <div className="bg-orange-500 rounded p-1 w-12 h-1w-12 text-white text-lg flex items-center justify-center">
-                          <div className="text-center">
-                            <p>{minutes}</p>
-                            <p className="text-xs leading-3">phút</p>
-                          </div>
-                        </div>
-                        <div className="bg-orange-500 rounded p-1 w-12 h-1w-12 text-white text-lg flex items-center justify-center">
-                          <div className="text-center">
-                            <p>{seconds}</p>
-                            <p className="text-xs leading-3">giây</p>
-                          </div>
-                        </div>
-                      </div>
+              <div className="pt-4 border-t">
+                <div className="prose max-w-none">
+                  <p className="text-gray-600 mb-4 text-lg">
+                    Măng Đen Ultra Trail là giải chạy trail thường niên
+                    được tổ chức tại cao nguyên Măng Đen, Kon Tum. Đây là
+                    một trong những giải chạy trail thử thách nhất Việt
+                    Nam với địa hình đa dạng từ rừng thông, thác nước đến
+                    những con đường mòn núi hiểm trở.
+                  </p>
+                  <p className="text-gray-600 mb-8 text-lg">
+                    Giải chạy không chỉ là thử thách thể chất mà còn là cơ
+                    hội để vận động viên khám phá vẻ đẹp hoang sơ của
+                    thiên nhiên Tây Nguyên, trải nghiệm văn hóa địa phương
+                    độc đáo.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-6">
+                    <div className="text-center p-6 bg-gray-50 rounded-lg">
+                      <Mountain className="w-8 h-8 mx-auto mb-4" />
+                      <h3 className="font-bold">Địa hình đa dạng</h3>
+                      <p className="text-sm text-gray-600">
+                        Rừng thông, thác nước, đường mòn núi
+                      </p>
+                    </div>
+                    <div className="text-center p-6 bg-gray-50 rounded-lg">
+                      <Users className="w-8 h-8 mx-auto mb-4" />
+                      <h3 className="font-bold">Cộng đồng đam mê</h3>
+                      <p className="text-sm text-gray-600">
+                        Kết nối các trail runner Việt Nam
+                      </p>
+                    </div>
+                    <div className="text-center p-6 bg-gray-50 rounded-lg">
+                      <Trophy className="w-8 h-8 mx-auto mb-4" />
+                      <h3 className="font-bold">Thử thách bản thân</h3>
+                      <p className="text-sm text-gray-600">
+                        Vượt qua giới hạn của chính mình
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <p className="text-sm lg:text-xl text-center">
-              <b>Sự kiện sẽ diễn ra sau</b>
-            </p>
           </div>
-          <div className="text-center text-blue-500 mt-4 font-bold text-base">
-            Chỉ từ 868.000&nbsp;₫
-          </div>
-        </div>
-      </div>
+          <Accordion type="multiple" className="space-y-6">
 
-      {/* Main Content */}
-      <div className="lg:container pb-2 pt-4 md:py-5">
-        <section className="flex flex-wrap lg:flex-nowrap lg:-mx-3 lg:gap-3">
-          <div className="w-full lg:w-2/3 space-y-16 pt-5 lg:pt-10">
-            <Accordion type="single" collapsible className="space-y-6">
-              {/* Overview Section */}
-              <AccordionItem value="overview" className="shadow-md px-4 rounded-lg">
-                <AccordionTrigger className="font-medium text-xl">
-                  Giới thiệu giải chạy
-                </AccordionTrigger>
-                <AccordionContent>
-                  <Card>
-                    <CardContent className="p-8">
-                      <div className="prose max-w-none">
-                        <p className="text-gray-600 mb-4 text-lg">
-                          Măng Đen Ultra Trail là giải chạy trail thường niên
-                          được tổ chức tại cao nguyên Măng Đen, Kon Tum. Đây là
-                          một trong những giải chạy trail thử thách nhất Việt
-                          Nam với địa hình đa dạng từ rừng thông, thác nước đến
-                          những con đường mòn núi hiểm trở.
-                        </p>
-                        <p className="text-gray-600 mb-8 text-lg">
-                          Giải chạy không chỉ là thử thách thể chất mà còn là cơ
-                          hội để vận động viên khám phá vẻ đẹp hoang sơ của
-                          thiên nhiên Tây Nguyên, trải nghiệm văn hóa địa phương
-                          độc đáo.
-                        </p>
-                        <div className="grid md:grid-cols-3 gap-6">
-                          <div className="text-center p-6 bg-gray-50 rounded-lg">
-                            <Mountain className="w-8 h-8 mx-auto mb-4" />
-                            <h3 className="font-bold">Địa hình đa dạng</h3>
-                            <p className="text-sm text-gray-600">
-                              Rừng thông, thác nước, đường mòn núi
-                            </p>
-                          </div>
-                          <div className="text-center p-6 bg-gray-50 rounded-lg">
-                            <Users className="w-8 h-8 mx-auto mb-4" />
-                            <h3 className="font-bold">Cộng đồng đam mê</h3>
-                            <p className="text-sm text-gray-600">
-                              Kết nối các trail runner Việt Nam
-                            </p>
-                          </div>
-                          <div className="text-center p-6 bg-gray-50 rounded-lg">
-                            <Trophy className="w-8 h-8 mx-auto mb-4" />
-                            <h3 className="font-bold">Thử thách bản thân</h3>
-                            <p className="text-sm text-gray-600">
-                              Vượt qua giới hạn của chính mình
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </AccordionContent>
-              </AccordionItem>
+            {/* Distances Section */}
+            <AccordionItem value="distances" className="shadow-md px-4 rounded-lg">
+              <AccordionTrigger className="font-bold text-xl hover:no-underline">
+                Cự ly thi đấu
+              </AccordionTrigger>
+              <AccordionContent>
+                <div className="flex flex-wrap justify-center gap-2 mb-8 pt-8 border-t">
+                  {distances.map((distance, index) => (
+                    <Button
+                      key={index}
+                      variant={
+                        selectedDistance === distance.name.split(" ")[0]
+                          ? "default"
+                          : "outline"
+                      }
+                      onClick={() =>
+                        setSelectedDistance(distance.name.split(" ")[0])
+                      }
+                      className="mb-0"
+                    >
+                      {distance.name}
+                    </Button>
+                  ))}
+                </div>
 
-              {/* Distances Section */}
-              <AccordionItem value="distances" className="shadow-md px-4 rounded-lg">
-                <AccordionTrigger className="font-medium text-xl">
-                  Cự ly thi đấu
-                </AccordionTrigger>
-                <AccordionContent>
-                  <div className="flex flex-wrap justify-center gap-2 mb-8">
-                    {distances.map((distance, index) => (
-                      <Button
-                        key={index}
-                        variant={
-                          selectedDistance === distance.name.split(" ")[0]
-                            ? "default"
-                            : "outline"
-                        }
-                        onClick={() =>
-                          setSelectedDistance(distance.name.split(" ")[0])
-                        }
-                        className="mb-2"
-                      >
-                        {distance.name}
-                      </Button>
-                    ))}
-                  </div>
+                <Card>
+                  <CardContent className="p-8">
+                    <h3 className="text-2xl font-bold mb-6 flex items-center">
+                      <Route className="mr-3" size={24} />
+                      Thông tin đường đua - {selectedDistance}K
+                    </h3>
 
-                  <Card>
-                    <CardContent className="p-8">
-                      <h3 className="text-2xl font-bold mb-6 flex items-center">
-                        <Route className="mr-3" size={24} />
-                        Thông tin đường đua - {selectedDistance}K
-                      </h3>
+                    <div className="space-y-6">
+                      <p className="text-gray-600 text-lg">
+                        {courseInfo[selectedDistance].description}
+                      </p>
 
-                      <div className="space-y-6">
-                        <p className="text-gray-600 text-lg">
-                          {courseInfo[selectedDistance].description}
-                        </p>
-
-                        <div className="grid md:grid-cols-2 gap-8">
-                          <div>
-                            <h4 className="font-bold mb-4 text-lg">
-                              🗺️ Điểm nổi bật
-                            </h4>
-                            <ul className="space-y-2">
-                              {courseInfo[selectedDistance].highlights.map(
-                                (highlight, idx) => (
-                                  <li
-                                    key={idx}
-                                    className="flex items-start space-x-2"
-                                  >
-                                    <span className="text-green-600 mt-1">
-                                      •
-                                    </span>
-                                    <span className="text-gray-600">
-                                      {highlight}
-                                    </span>
-                                  </li>
-                                )
-                              )}
-                            </ul>
-                          </div>
-
-                          <div className="space-y-4">
-                            <div>
-                              <h4 className="font-bold mb-2">🏔️ Địa hình</h4>
-                              <p className="text-gray-600">
-                                {courseInfo[selectedDistance].terrain}
-                              </p>
-                            </div>
-
-                            <div>
-                              <h4 className="font-bold mb-2">⚠️ Độ khó</h4>
-                              <span
-                                className={`px-3 py-1 rounded-full text-sm font-medium ${getDifficultyColor(
-                                  courseInfo[selectedDistance].difficulty
-                                )}`}
-                              >
-                                {courseInfo[selectedDistance].difficulty}
-                              </span>
-                            </div>
-
-                            <div>
-                              <h4 className="font-bold mb-2">🏁 Checkpoints</h4>
-                              <p className="text-gray-600">
-                                {courseInfo[selectedDistance].checkpoints} điểm
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-6">
-                          <div className="flex items-start space-x-3">
-                            <AlertTriangle
-                              className="text-blue-600 mt-1"
-                              size={20}
-                            />
-                            <div>
-                              <h4 className="font-bold text-blue-800 mb-2">
-                                Lưu ý quan trọng
-                              </h4>
-                              <p className="text-blue-700 text-sm">
-                                Vận động viên cần chuẩn bị kỹ lưỡng về thể lực
-                                và trang thiết bị. Đọc kỹ quy định về trang bị
-                                bắt buộc trước khi tham gia.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* Registration Section */}
-              <AccordionItem value="registration" className="shadow-md px-4 rounded-lg">
-                <AccordionTrigger className="font-medium text-xl">
-                  Thông tin đăng ký
-                </AccordionTrigger>
-                <AccordionContent>
-                  <Card>
-                    <CardContent className="p-8">
-                      <div className="space-y-6">
-                        <div className="grid md:grid-cols-2 gap-8">
-                          <div>
-                            <h3 className="font-bold mb-4 text-xl">
-                              Thời gian đăng ký
-                            </h3>
-                            <ul className="space-y-2 text-gray-600">
-                              <li>• Early Bird: 01/09 - 30/09/2024</li>
-                              <li>• Đăng ký thường: 01/10 - 30/11/2024</li>
-                              <li>• Đăng ký cuối: 01/12 - 10/12/2024</li>
-                            </ul>
-                          </div>
-                          <div>
-                            <h3 className="font-bold mb-4 text-xl">
-                              Yêu cầu tham gia
-                            </h3>
-                            <ul className="space-y-2 text-gray-600">
-                              <li>• Tuổi từ 18-65</li>
-                              <li>• Khám sức khỏe trong 6 tháng</li>
-                              <li>• Kinh nghiệm chạy trail tối thiểu</li>
-                              <li>• Bảo hiểm thể thao</li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
-                          <h3 className="font-bold text-yellow-800 mb-2">
-                            Lưu ý quan trọng
-                          </h3>
-                          <p className="text-yellow-700 mb-4">
-                            Số lượng có hạn. Đăng ký sớm để được ưu đãi giá
-                            Early Bird và đảm bảo suất tham gia.
-                          </p>
-                          <Link href={`/race-registration`}>
-                            <Button className="bg-black text-white hover:bg-gray-800">
-                              Đăng ký ngay
-                            </Button>
-                          </Link>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* Shirt Sizes Section */}
-              <AccordionItem value="shirt-sizes" className="shadow-md px-4 rounded-lg">
-                <AccordionTrigger className="font-medium text-xl">
-                  Size áo thi đấu
-                </AccordionTrigger>
-                <AccordionContent>
-                  <Card>
-                    <CardContent className="p-8">
-                      <div className="flex items-center mb-6">
-                        <Shirt className="mr-3" size={24} />
-                        <h3 className="text-2xl font-bold">
-                          Bảng size áo chính thức
-                        </h3>
-                      </div>
-                      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                        {shirtSizes.map((shirt, index) => (
-                          <div
-                            key={index}
-                            className="border rounded-lg p-4 text-center"
-                          >
-                            <h4 className="text-xl font-bold mb-2">
-                              {shirt.size}
-                            </h4>
-                            <p className="text-lg text-green-600 font-semibold mb-1">
-                              {shirt.chest}
-                            </p>
-                            <p className="text-sm text-gray-600">
-                              {shirt.description}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-                      <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6">
-                        <p className="text-yellow-800 text-sm">
-                          <strong>Lưu ý:</strong> Vui lòng chọn size chính xác
-                          khi đăng ký. Không thể đổi size sau khi đăng ký thành
-                          công.
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </AccordionContent>
-              </AccordionItem>
-
-              {/* Required Equipment Section - Now Dynamic */}
-              <AccordionItem value="required-equipment" className="shadow-md px-4 rounded-lg">
-                <AccordionTrigger className="font-medium text-xl">
-                  Trang thiết bị bắt buộc
-                </AccordionTrigger>
-                <AccordionContent>
-                  {/* Distance Selection for Equipment */}
-                  <div className="flex flex-wrap justify-center gap-2 mb-8">
-                    {distances.map((distance, index) => (
-                      <Button
-                        key={index}
-                        variant={
-                          selectedDistance === distance.name.split(" ")[0]
-                            ? "default"
-                            : "outline"
-                        }
-                        onClick={() =>
-                          setSelectedDistance(distance.name.split(" ")[0])
-                        }
-                        className="mb-2"
-                      >
-                        {distance.name}
-                      </Button>
-                    ))}
-                  </div>
-
-                  <Card>
-                    <CardContent className="p-8">
-                      <div className="flex items-center mb-6">
-                        <Package className="mr-3" size={24} />
-                        <h3 className="text-2xl font-bold">
-                          Trang thiết bị cho cự ly {selectedDistance}
-                        </h3>
-                      </div>
-
-                      <div className="grid md:grid-cols-3 gap-8">
-                        {/* Mandatory Equipment */}
+                      <div className="grid md:grid-cols-2 gap-8">
                         <div>
-                          <h4 className="font-bold text-lg mb-4 text-red-600">
-                            🔴 Bắt buộc
+                          <h4 className="font-bold mb-4 text-lg">
+                            🗺️ Điểm nổi bật
                           </h4>
                           <ul className="space-y-2">
-                            {requiredEquipmentByDistance[
-                              selectedDistance
-                            ].mandatory.map((item, index) => (
-                              <li
-                                key={index}
-                                className="flex items-start space-x-2"
-                              >
-                                <span className="text-red-600 mt-1">•</span>
-                                <span className="text-gray-700">{item}</span>
-                              </li>
-                            ))}
+                            {courseInfo[selectedDistance].highlights.map(
+                              (highlight, idx) => (
+                                <li
+                                  key={idx}
+                                  className="flex items-start space-x-2"
+                                >
+                                  <span className="text-green-600 mt-1">
+                                    •
+                                  </span>
+                                  <span className="text-gray-600">
+                                    {highlight}
+                                  </span>
+                                </li>
+                              )
+                            )}
                           </ul>
                         </div>
 
-                        {/* Recommended Equipment */}
-                        <div>
-                          <h4 className="font-bold text-lg mb-4 text-yellow-600">
-                            🟡 Khuyến nghị
-                          </h4>
-                          <ul className="space-y-2">
-                            {requiredEquipmentByDistance[
-                              selectedDistance
-                            ].recommended.map((item, index) => (
-                              <li
-                                key={index}
-                                className="flex items-start space-x-2"
-                              >
-                                <span className="text-yellow-600 mt-1">•</span>
-                                <span className="text-gray-700">{item}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
+                        <div className="space-y-4">
+                          <div>
+                            <h4 className="font-bold mb-2">🏔️ Địa hình</h4>
+                            <p className="text-gray-600">
+                              {courseInfo[selectedDistance].terrain}
+                            </p>
+                          </div>
 
-                        {/* Prohibited Items */}
-                        <div>
-                          <h4 className="font-bold text-lg mb-4 text-red-600">
-                            ❌ Cấm sử dụng
-                          </h4>
-                          <ul className="space-y-2">
-                            {requiredEquipmentByDistance[
-                              selectedDistance
-                            ].prohibited.map((item, index) => (
-                              <li
-                                key={index}
-                                className="flex items-start space-x-2"
-                              >
-                                <span className="text-red-600 mt-1">•</span>
-                                <span className="text-gray-700">{item}</span>
-                              </li>
-                            ))}
-                          </ul>
+                          <div>
+                            <h4 className="font-bold mb-2">⚠️ Độ khó</h4>
+                            <span
+                              className={`px-3 py-1 rounded-full text-sm font-medium ${getDifficultyColor(
+                                courseInfo[selectedDistance].difficulty
+                              )}`}
+                            >
+                              {courseInfo[selectedDistance].difficulty}
+                            </span>
+                          </div>
+
+                          <div>
+                            <h4 className="font-bold mb-2">🏁 Checkpoints</h4>
+                            <p className="text-gray-600">
+                              {courseInfo[selectedDistance].checkpoints} điểm
+                            </p>
+                          </div>
                         </div>
                       </div>
 
-                      <div className="bg-red-50 border border-red-200 rounded-lg p-6 mt-8">
+                      <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-6">
                         <div className="flex items-start space-x-3">
                           <AlertTriangle
-                            className="text-red-600 mt-1"
+                            className="text-blue-600 mt-1"
                             size={20}
                           />
                           <div>
-                            <h4 className="font-bold text-red-800 mb-2">
-                              Kiểm tra trang thiết bị
+                            <h4 className="font-bold text-blue-800 mb-2">
+                              Lưu ý quan trọng
                             </h4>
-                            <p className="text-red-700 text-sm">
-                              BTC sẽ kiểm tra trang thiết bị bắt buộc trước khi
-                              xuất phát. Vận động viên thiếu bất kỳ trang thiết
-                              bị nào sẽ không được phép tham gia. Yêu cầu trang
-                              thiết bị sẽ khác nhau tùy theo cự ly thi đấu.
+                            <p className="text-blue-700 text-sm">
+                              Vận động viên cần chuẩn bị kỹ lưỡng về thể lực
+                              và trang thiết bị. Đọc kỹ quy định về trang bị
+                              bắt buộc trước khi tham gia.
                             </p>
                           </div>
                         </div>
                       </div>
-                    </CardContent>
-                  </Card>
-                </AccordionContent>
-              </AccordionItem>
+                    </div>
+                  </CardContent>
+                </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-              {/* Schedule Section - Improved */}
-              <AccordionItem value="schedule" className="shadow-md px-4 rounded-lg">
-                <AccordionTrigger className="font-medium text-xl">
-                  Lịch trình sự kiện
-                </AccordionTrigger>
-                <AccordionContent>
-                  <Card>
-                    <CardContent className="p-8">
-                      <div className="flex items-center mb-6">
-                        <Clock className="mr-3" size={24} />
-                        <h3 className="text-2xl font-bold">
-                          Chương trình 2 ngày thi đấu
+            {/* Registration Section */}
+            <AccordionItem value="registration" className="shadow-md px-4 rounded-lg">
+              <AccordionTrigger className="font-bold text-xl hover:no-underline">
+                Thông tin đăng ký
+              </AccordionTrigger>
+              <AccordionContent>
+                <div className="pt-4 border-t">
+                  <div className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-8">
+                      <div>
+                        <h3 className="font-medium mb-4 text-xl">
+                          Thời gian đăng ký
                         </h3>
-                      </div>
-
-                      <div className="space-y-6">
-                        {schedule.map((item, index) => (
-                          <div
-                            key={index}
-                            className="border rounded-lg p-6 hover:bg-gray-50 transition-colors"
-                          >
-                            <div className="grid md:grid-cols-4 gap-4 items-start">
-                              <div className="space-y-2">
-                                <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-bold text-center">
-                                  {item.date}
-                                </div>
-                                <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold text-center">
-                                  {item.time}
-                                </div>
-                              </div>
-                              <div className="md:col-span-1">
-                                <div className="flex items-center space-x-2 text-gray-600 mb-2">
-                                  <MapPin size={16} />
-                                  <span className="text-sm font-medium">
-                                    {item.location}
-                                  </span>
-                                </div>
-                              </div>
-                              <div className="md:col-span-2">
-                                <h4 className="font-bold text-lg mb-2">
-                                  {item.event}
-                                </h4>
-                                <p className="text-gray-600 text-sm leading-relaxed">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-
-                      <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8">
-                        <h4 className="font-bold text-blue-800 mb-2">
-                          Lưu ý về lịch trình
-                        </h4>
-                        <ul className="text-blue-700 text-sm space-y-1">
-                          <li>
-                            • Lịch trình có thể thay đổi tùy thuộc vào điều kiện
-                            thời tiết
-                          </li>
-                          <li>
-                            • Vận động viên 100K sẽ chạy qua đêm từ 15/12 đến
-                            16/12
-                          </li>
-                          <li>
-                            • Tất cả thông tin cập nhật sẽ được thông báo qua
-                            email và website
-                          </li>
-                          <li>• Vui lòng có mặt đúng giờ theo lịch trình</li>
+                        <ul className="space-y-2 ps-3 text-gray-600">
+                          <li>• Early Bird: 01/09 - 30/09/2024</li>
+                          <li>• Đăng ký thường: 01/10 - 30/11/2024</li>
+                          <li>• Đăng ký cuối: 01/12 - 10/12/2024</li>
                         </ul>
                       </div>
-                    </CardContent>
-                  </Card>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
-
-          <div className="w-full lg:w-1/3 lg:px-3 space-y-8">
-            <div className="bg-white lg:rounded-lg lg:mt-10">
-              <div className="border rounded-md shadow-md p-4">
-                <div className="hidden lg:block space-y-2 border-b pb-6 border-[#98A2B3]">
-                  <p className="text-sm lg:text-xl text-center">
-                    <b>Sự kiện sẽ diễn ra sau</b>
-                  </p>
-                  <div>
-                    <div className="text-sm font-medium text-gr-500 capitalize">
                       <div>
+                        <h3 className="font-medium mb-4 text-xl">
+                          Yêu cầu tham gia
+                        </h3>
+                        <ul className="space-y-2 ps-3 text-gray-600">
+                          <li>• Tuổi từ 18-65</li>
+                          <li>• Khám sức khỏe trong 6 tháng</li>
+                          <li>• Kinh nghiệm chạy trail tối thiểu</li>
+                          <li>• Bảo hiểm thể thao</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6">
+                      <h3 className="font-bold text-yellow-800 mb-2">
+                        Lưu ý quan trọng
+                      </h3>
+                      <p className="text-yellow-700 mb-4">
+                        Số lượng có hạn. Đăng ký sớm để được ưu đãi giá
+                        Early Bird và đảm bảo suất tham gia.
+                      </p>
+                      <Link href={`/race-registration`}>
+                        <Button className="bg-black text-white hover:bg-gray-800">
+                          Đăng ký ngay
+                        </Button>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Shirt Sizes Section */}
+            <AccordionItem value="shirt-sizes" className="shadow-md px-4 rounded-lg">
+              <AccordionTrigger className="font-bold text-xl hover:no-underline">
+                Size áo thi đấu
+              </AccordionTrigger>
+              <AccordionContent>
+                <Card>
+                  <CardContent className="p-8">
+                    <div className="flex items-center mb-6">
+                      <Shirt className="mr-3" size={24} />
+                      <h3 className="text-xl font-medium">
+                        Bảng size áo chính thức
+                      </h3>
+                    </div>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {shirtSizes.map((shirt, index) => (
+                        <div
+                          key={index}
+                          className="border rounded-lg p-4 text-center"
+                        >
+                          <h4 className="text-xl font-medium mb-2">
+                            {shirt.size}
+                          </h4>
+                          <p className="text-lg text-green-600 font-semibold mb-1">
+                            {shirt.chest}
+                          </p>
+                          <p className="text-sm text-gray-600">
+                            {shirt.description}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mt-6">
+                      <p className="text-yellow-800 text-sm">
+                        <strong>Lưu ý:</strong> Vui lòng chọn size chính xác
+                        khi đăng ký. Không thể đổi size sau khi đăng ký thành
+                        công.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </AccordionContent>
+            </AccordionItem>
+
+            {/* Required Equipment Section - Now Dynamic */}
+            <AccordionItem value="required-equipment" className="shadow-md px-4 rounded-lg">
+              <AccordionTrigger className="font-bold text-xl hover:no-underline">
+                Trang thiết bị bắt buộc
+              </AccordionTrigger>
+              <AccordionContent>
+                {/* Distance Selection for Equipment */}
+                <div className="flex flex-wrap justify-center gap-2 mb-8 pt-8 border-t">
+                  {distances.map((distance, index) => (
+                    <Button
+                      key={index}
+                      variant={
+                        selectedDistance === distance.name.split(" ")[0]
+                          ? "default"
+                          : "outline"
+                      }
+                      onClick={() =>
+                        setSelectedDistance(distance.name.split(" ")[0])
+                      }
+                      className="mb-0"
+                    >
+                      {distance.name}
+                    </Button>
+                  ))}
+                </div>
+
+                <Card>
+                  <CardContent className="p-8">
+                    <div className="flex items-center mb-6">
+                      <Package className="mr-3" size={24} />
+                      <h3 className="text-2xl font-bold">
+                        Trang thiết bị cho cự ly {selectedDistance}
+                      </h3>
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-8">
+                      {/* Mandatory Equipment */}
+                      <div>
+                        <h4 className="font-bold text-lg mb-4 text-red-600">
+                          🔴 Bắt buộc
+                        </h4>
+                        <ul className="space-y-2">
+                          {requiredEquipmentByDistance[
+                            selectedDistance
+                          ].mandatory.map((item, index) => (
+                            <li
+                              key={index}
+                              className="flex items-start space-x-2"
+                            >
+                              <span className="text-red-600 mt-1">•</span>
+                              <span className="text-gray-700">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Recommended Equipment */}
+                      <div>
+                        <h4 className="font-bold text-lg mb-4 text-yellow-600">
+                          🟡 Khuyến nghị
+                        </h4>
+                        <ul className="space-y-2">
+                          {requiredEquipmentByDistance[
+                            selectedDistance
+                          ].recommended.map((item, index) => (
+                            <li
+                              key={index}
+                              className="flex items-start space-x-2"
+                            >
+                              <span className="text-yellow-600 mt-1">•</span>
+                              <span className="text-gray-700">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Prohibited Items */}
+                      <div>
+                        <h4 className="font-bold text-lg mb-4 text-red-600">
+                          ❌ Cấm sử dụng
+                        </h4>
+                        <ul className="space-y-2">
+                          {requiredEquipmentByDistance[
+                            selectedDistance
+                          ].prohibited.map((item, index) => (
+                            <li
+                              key={index}
+                              className="flex items-start space-x-2"
+                            >
+                              <span className="text-red-600 mt-1">•</span>
+                              <span className="text-gray-700">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div className="bg-red-50 border border-red-200 rounded-lg p-6 mt-8">
+                      <div className="flex items-start space-x-3">
+                        <AlertTriangle
+                          className="text-red-600 mt-1"
+                          size={20}
+                        />
                         <div>
-                          <div className="flex">
-                            <div className="flex gap-3 mx-auto">
-                              <div className="bg-orange-500 rounded p-1 w-12 h-1w-12 text-white text-lg flex items-center justify-center">
-                                <div className="text-center">
-                                  <p>{months}</p>
-                                  <p className="text-xs leading-3">tháng</p>
-                                </div>
-                              </div>
-                              <div className="bg-orange-500 rounded p-1 w-12 h-1w-12 text-white text-lg flex items-center justify-center">
-                                <div className="text-center">
-                                  <p>{days}</p>
-                                  <p className="text-xs leading-3">ngày</p>
-                                </div>
-                              </div>
-                              <div className="bg-orange-500 rounded p-1 w-12 h-1w-12 text-white text-lg flex items-center justify-center">
-                                <div className="text-center">
-                                  <p>{hours}</p>
-                                  <p className="text-xs leading-3">giờ</p>
-                                </div>
-                              </div>
-                              <div className="bg-orange-500 rounded p-1 w-12 h-1w-12 text-white text-lg flex items-center justify-center">
-                                <div className="text-center">
-                                  <p>{minutes}</p>
-                                  <p className="text-xs leading-3">phút</p>
-                                </div>
-                              </div>
-                              <div className="bg-orange-500 rounded p-1 w-12 h-1w-12 text-white text-lg flex items-center justify-center">
-                                <div className="text-center">
-                                  <p>{seconds}</p>
-                                  <p className="text-xs leading-3">giây</p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+                          <h4 className="font-bold text-red-800 mb-2">
+                            Kiểm tra trang thiết bị
+                          </h4>
+                          <p className="text-red-700 text-sm">
+                            BTC sẽ kiểm tra trang thiết bị bắt buộc trước khi
+                            xuất phát. Vận động viên thiếu bất kỳ trang thiết
+                            bị nào sẽ không được phép tham gia. Yêu cầu trang
+                            thiết bị sẽ khác nhau tùy theo cự ly thi đấu.
+                          </p>
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
+                  </CardContent>
+                </Card>
+              </AccordionContent>
+            </AccordionItem>
 
-                <div className="divide-y h-full overflow-auto">
-                  <Accordion type="multiple" className="w-full">
-                    <AccordionItem
-                      value="race-categories"
-                      className="border-b border-gray-200"
-                    >
-                      <AccordionTrigger className="">
-                        <div className="text-left">
-                          <div className="font-medium">Super Early Bird</div>
-                          <p className="text-xs text-gray-700">
-                            Mở đăng ký: 8 - 11/05/2025
-                          </p>
-                        </div>
-                      </AccordionTrigger>
-                      <AccordionContent>
-                        <div className="pt-4 space-y-3">
-                          <div className="border rounded-lg p-2 flex bg-white shadow-md">
-                            <div className="w-16 mr-2">
-                              <div className="relative aspect-[1/1]">
-                                <img
-                                  src="/images/logo-race.jpg"
-                                  className="absolute w-full h-full object-cover rounded-md"
-                                  alt="Super Early Bird"
-                                />
-                              </div>
-                            </div>
-                            <div className="flex-1 flex flex-col">
-                              <div className="line-clamp-2 font-bold">
-                                10KM<span className="hidden"> - </span>
-                                <span className="hidden">ORDINARY</span>
-                              </div>
-                              <div className="flex justify-between  flex-1 items-end">
-                                <div className="text-base whitespace-nowrap flex flex-row items-center">
-                                  <span className="pr-1.5">
-                                    <img
-                                      src="/images/primary-tag.svg"
-                                      alt="tag"
-                                    />
-                                  </span>
-                                  <b className="text-primary-600">868,000đ</b>
-                                </div>
-                                <div className="text-white btn btn-xs h-auto rounded bg-orange-500">
-                                  Đã kết thúc
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="border rounded-lg p-2 flex bg-white shadow-md">
-                            <div className="w-16 mr-2">
-                              <div className="relative aspect-[1/1]">
-                                <img
-                                  src="/images/logo-race.jpg"
-                                  className="absolute w-full h-full object-cover rounded-md"
-                                  alt="Super Early Bird"
-                                />
-                              </div>
-                            </div>
-                            <div className="flex-1 flex flex-col">
-                              <div className="line-clamp-2 font-bold">
-                                25KM<span className="hidden"> - </span>
-                                <span className="hidden">ORDINARY</span>
-                              </div>
-                              <div className="flex justify-between  flex-1 items-end">
-                                <div className="text-base whitespace-nowrap flex flex-row items-center">
-                                  <span className="pr-1.5">
-                                    <img
-                                      src="/images/primary-tag.svg"
-                                      alt="tag"
-                                    />
-                                  </span>
-                                  <b className="text-primary-600">1,268,000đ</b>
-                                </div>
-                                <div className="text-white btn btn-xs h-auto rounded bg-orange-500">
-                                  Đã kết thúc
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="border rounded-lg p-2 flex bg-white shadow-md">
-                            <div className="w-16 mr-2">
-                              <div className="relative aspect-[1/1]">
-                                <img
-                                  src="/images/logo-race.jpg"
-                                  className="absolute w-full h-full object-cover rounded-md"
-                                  alt="Super Early Bird"
-                                />
-                              </div>
-                            </div>
-                            <div className="flex-1 flex flex-col">
-                              <div className="line-clamp-2 font-bold">
-                                50KM<span className="hidden"> - </span>
-                                <span className="hidden">ORDINARY</span>
-                              </div>
-                              <div className="flex justify-between  flex-1 items-end">
-                                <div className="text-base whitespace-nowrap flex flex-row items-center">
-                                  <span className="pr-1.5">
-                                    <img
-                                      src="/images/primary-tag.svg"
-                                      alt="tag"
-                                    />
-                                  </span>
-                                  <b className="text-primary-600">1,468,000đ</b>
-                                </div>
-                                <div className="text-white btn btn-xs h-auto rounded bg-orange-500">
-                                  Đã kết thúc
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="border rounded-lg p-2 flex bg-white shadow-md">
-                            <div className="w-16 mr-2">
-                              <div className="relative aspect-[1/1]">
-                                <img
-                                  src="/images/logo-race.jpg"
-                                  className="absolute w-full h-full object-cover rounded-md"
-                                  alt="Super Early Bird"
-                                />
-                              </div>
-                            </div>
-                            <div className="flex-1 flex flex-col">
-                              <div className="line-clamp-2 font-bold">
-                                75KM<span className="hidden"> - </span>
-                                <span className="hidden">ORDINARY</span>
-                              </div>
-                              <div className="flex justify-between  flex-1 items-end">
-                                <div className="text-base whitespace-nowrap flex flex-row items-center">
-                                  <span className="pr-1.5">
-                                    <img
-                                      src="/images/primary-tag.svg"
-                                      alt="tag"
-                                    />
-                                  </span>
-                                  <b className="text-primary-600">2,068,000đ</b>
-                                </div>
-                                <div className="text-white btn btn-xs h-auto rounded bg-orange-500">
-                                  Đã kết thúc
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="border rounded-lg p-2 flex bg-white shadow-md">
-                            <div className="w-16 mr-2">
-                              <div className="relative aspect-[1/1]">
-                                <img
-                                  src="/images/logo-race.jpg"
-                                  className="absolute w-full h-full object-cover rounded-md"
-                                  alt="Super Early Bird"
-                                />
-                              </div>
-                            </div>
-                            <div className="flex-1 flex flex-col">
-                              <div className="line-clamp-2 font-bold">
-                                100KM<span className="hidden"> - </span>
-                                <span className="hidden">ORDINARY</span>
-                              </div>
-                              <div className="flex justify-between  flex-1 items-end">
-                                <div className="text-base whitespace-nowrap flex flex-row items-center">
-                                  <span className="pr-1.5">
-                                    <img
-                                      src="/images/primary-tag.svg"
-                                      alt="tag"
-                                    />
-                                  </span>
-                                  <b className="text-primary-600">2,468,000đ</b>
-                                </div>
-                                <div className="text-white btn btn-xs h-auto rounded bg-orange-500">
-                                  Đã kết thúc
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </AccordionContent>
-                    </AccordionItem>
-                    <AccordionItem
-                      value="prizes"
-                      className="border-b border-gray-200"
-                    >
-                      <AccordionTrigger>
-                        <div className="text-left">
-                          <div className="font-medium">Early Bird</div>
-                          <p className="text-xs text-gray-700">
-                            Mở đăng ký: 12/05 - 20/11/2025
-                          </p>
-                        </div>
-                      </AccordionTrigger>
-                      <AccordionContent>
-                        <div className="pt-4 space-y-3">
-                          <div className="border rounded-lg p-2 flex bg-white shadow-md">
-                            <div className="w-16 mr-2">
-                              <div className="relative aspect-[1/1]">
-                                <img
-                                  src="/images/logo-race.jpg"
-                                  className="absolute w-full h-full object-cover rounded-md"
-                                  alt="Early Bird"
-                                />
-                              </div>
-                            </div>
-                            <div className="flex-1 flex flex-col">
-                              <div className="line-clamp-2 font-bold">
-                                10KM<span className="hidden"> - </span>
-                                <span className="hidden">ORDINARY</span>
-                              </div>
-                              <div className="flex justify-between  flex-1 items-end">
-                                <div className="text-base whitespace-nowrap flex flex-row items-center">
-                                  <span className="pr-1.5">
-                                    <img
-                                      src="/images/primary-tag.svg"
-                                      alt="tag"
-                                    />
-                                  </span>
-                                  <b className="text-primary-600">1,468,000đ</b>
-                                </div>
-                                <div>
-                                  <div className="flex justify-center items-center">
-                                    <button
-                                      className="h-6 w-6 btn btn-circle bg-primary-100 text-primary-600 hover:bg-primary-200"
-                                      data-dir="down"
-                                      data-id={1930}
-                                    >
-                                      <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        strokeWidth={0}
-                                        viewBox="0 0 1024 1024"
-                                        height={12}
-                                        width={12}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z" />
-                                      </svg>
-                                    </button>
-                                    <input
-                                      className="w-8 text-sm bg-transparent outline-none appearance-none hide-arrow text-center font-semibold py-1"
-                                      type="number"
-                                      defaultValue={0}
-                                    />
-                                    <button
-                                      className="h-6 w-6 btn btn-circle bg-primary-100 text-primary-600 hover:bg-primary-200"
-                                      data-dir="up"
-                                      data-id={1930}
-                                    >
-                                      <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        strokeWidth={0}
-                                        viewBox="0 0 1024 1024"
-                                        height={12}
-                                        width={12}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z" />
-                                        <path d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8Z" />
-                                      </svg>
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="border rounded-lg p-2 flex bg-white shadow-md">
-                            <div className="w-16 mr-2">
-                              <div className="relative aspect-[1/1]">
-                                <img
-                                  src="/images/logo-race.jpg"
-                                  className="absolute w-full h-full object-cover rounded-md"
-                                  alt="Early Bird"
-                                />
-                              </div>
-                            </div>
-                            <div className="flex-1 flex flex-col">
-                              <div className="line-clamp-2 font-bold">
-                                25KM<span className="hidden"> - </span>
-                                <span className="hidden">ORDINARY</span>
-                              </div>
-                              <div className="flex justify-between  flex-1 items-end">
-                                <div className="text-base whitespace-nowrap flex flex-row items-center">
-                                  <span className="pr-1.5">
-                                    <img
-                                      src="/images/primary-tag.svg"
-                                      alt="tag"
-                                    />
-                                  </span>
-                                  <b className="text-primary-600">1,868,000đ</b>
-                                </div>
-                                <div>
-                                  <div className="flex justify-center items-center">
-                                    <button
-                                      className="h-6 w-6 btn btn-circle bg-primary-100 text-primary-600 hover:bg-primary-200"
-                                      data-dir="down"
-                                      data-id={1925}
-                                    >
-                                      <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        strokeWidth={0}
-                                        viewBox="0 0 1024 1024"
-                                        height={12}
-                                        width={12}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z" />
-                                      </svg>
-                                    </button>
-                                    <input
-                                      className="w-8 text-sm bg-transparent outline-none appearance-none hide-arrow text-center font-semibold py-1"
-                                      type="number"
-                                      defaultValue={0}
-                                    />
-                                    <button
-                                      className="h-6 w-6 btn btn-circle bg-primary-100 text-primary-600 hover:bg-primary-200"
-                                      data-dir="up"
-                                      data-id={1925}
-                                    >
-                                      <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        strokeWidth={0}
-                                        viewBox="0 0 1024 1024"
-                                        height={12}
-                                        width={12}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z" />
-                                        <path d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8Z" />
-                                      </svg>
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="border rounded-lg p-2 flex bg-white shadow-md">
-                            <div className="w-16 mr-2">
-                              <div className="relative aspect-[1/1]">
-                                <img
-                                  src="/images/logo-race.jpg"
-                                  className="absolute w-full h-full object-cover rounded-md"
-                                  alt="Early Bird"
-                                />
-                              </div>
-                            </div>
-                            <div className="flex-1 flex flex-col">
-                              <div className="line-clamp-2 font-bold">
-                                50KM<span className="hidden"> - </span>
-                                <span className="hidden">ORDINARY</span>
-                              </div>
-                              <div className="flex justify-between  flex-1 items-end">
-                                <div className="text-base whitespace-nowrap flex flex-row items-center">
-                                  <span className="pr-1.5">
-                                    <img
-                                      src="/images/primary-tag.svg"
-                                      alt="tag"
-                                    />
-                                  </span>
-                                  <b className="text-primary-600">2,068,000đ</b>
-                                </div>
-                                <div>
-                                  <div className="flex justify-center items-center">
-                                    <button
-                                      className="h-6 w-6 btn btn-circle bg-primary-100 text-primary-600 hover:bg-primary-200"
-                                      data-dir="down"
-                                      data-id={1920}
-                                    >
-                                      <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        strokeWidth={0}
-                                        viewBox="0 0 1024 1024"
-                                        height={12}
-                                        width={12}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z" />
-                                      </svg>
-                                    </button>
-                                    <input
-                                      className="w-8 text-sm bg-transparent outline-none appearance-none hide-arrow text-center font-semibold py-1"
-                                      type="number"
-                                      defaultValue={0}
-                                    />
-                                    <button
-                                      className="h-6 w-6 btn btn-circle bg-primary-100 text-primary-600 hover:bg-primary-200"
-                                      data-dir="up"
-                                      data-id={1920}
-                                    >
-                                      <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        strokeWidth={0}
-                                        viewBox="0 0 1024 1024"
-                                        height={12}
-                                        width={12}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z" />
-                                        <path d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8Z" />
-                                      </svg>
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="border rounded-lg p-2 flex bg-white shadow-md">
-                            <div className="w-16 mr-2">
-                              <div className="relative aspect-[1/1]">
-                                <img
-                                  src="/images/logo-race.jpg"
-                                  className="absolute w-full h-full object-cover rounded-md"
-                                  alt="Early Bird"
-                                />
-                              </div>
-                            </div>
-                            <div className="flex-1 flex flex-col">
-                              <div className="line-clamp-2 font-bold">
-                                75KM<span className="hidden"> - </span>
-                                <span className="hidden">ORDINARY</span>
-                              </div>
-                              <div className="flex justify-between  flex-1 items-end">
-                                <div className="text-base whitespace-nowrap flex flex-row items-center">
-                                  <span className="pr-1.5">
-                                    <img
-                                      src="/images/primary-tag.svg"
-                                      alt="tag"
-                                    />
-                                  </span>
-                                  <b className="text-primary-600">2,668,000đ</b>
-                                </div>
-                                <div>
-                                  <div className="flex justify-center items-center">
-                                    <button
-                                      className="h-6 w-6 btn btn-circle bg-primary-100 text-primary-600 hover:bg-primary-200"
-                                      data-dir="down"
-                                      data-id={1915}
-                                    >
-                                      <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        strokeWidth={0}
-                                        viewBox="0 0 1024 1024"
-                                        height={12}
-                                        width={12}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z" />
-                                      </svg>
-                                    </button>
-                                    <input
-                                      className="w-8 text-sm bg-transparent outline-none appearance-none hide-arrow text-center font-semibold py-1"
-                                      type="number"
-                                      defaultValue={0}
-                                    />
-                                    <button
-                                      className="h-6 w-6 btn btn-circle bg-primary-100 text-primary-600 hover:bg-primary-200"
-                                      data-dir="up"
-                                      data-id={1915}
-                                    >
-                                      <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        strokeWidth={0}
-                                        viewBox="0 0 1024 1024"
-                                        height={12}
-                                        width={12}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z" />
-                                        <path d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8Z" />
-                                      </svg>
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="border rounded-lg p-2 flex bg-white shadow-md">
-                            <div className="w-16 mr-2">
-                              <div className="relative aspect-[1/1]">
-                                <img
-                                  src="/images/logo-race.jpg"
-                                  className="absolute w-full h-full object-cover rounded-md"
-                                  alt="Early Bird"
-                                />
-                              </div>
-                            </div>
-                            <div className="flex-1 flex flex-col">
-                              <div className="line-clamp-2 font-bold">
-                                100KM<span className="hidden"> - </span>
-                                <span className="hidden">ORDINARY</span>
-                              </div>
-                              <div className="flex justify-between  flex-1 items-end">
-                                <div className="text-base whitespace-nowrap flex flex-row items-center">
-                                  <span className="pr-1.5">
-                                    <img
-                                      src="/images/primary-tag.svg"
-                                      alt="tag"
-                                    />
-                                  </span>
-                                  <b className="text-primary-600">3,268,000đ</b>
-                                </div>
-                                <div>
-                                  <div className="flex justify-center items-center">
-                                    <button
-                                      className="h-6 w-6 btn btn-circle bg-primary-100 text-primary-600 hover:bg-primary-200"
-                                      data-dir="down"
-                                      data-id={1910}
-                                    >
-                                      <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        strokeWidth={0}
-                                        viewBox="0 0 1024 1024"
-                                        height={12}
-                                        width={12}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M872 474H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h720c4.4 0 8-3.6 8-8v-60c0-4.4-3.6-8-8-8z" />
-                                      </svg>
-                                    </button>
-                                    <input
-                                      className="w-8 text-sm bg-transparent outline-none appearance-none hide-arrow text-center font-semibold py-1"
-                                      type="number"
-                                      defaultValue={0}
-                                    />
-                                    <button
-                                      className="h-6 w-6 btn btn-circle bg-primary-100 text-primary-600 hover:bg-primary-200"
-                                      data-dir="up"
-                                      data-id={1910}
-                                    >
-                                      <svg
-                                        stroke="currentColor"
-                                        fill="currentColor"
-                                        strokeWidth={0}
-                                        viewBox="0 0 1024 1024"
-                                        height={12}
-                                        width={12}
-                                        xmlns="http://www.w3.org/2000/svg"
-                                      >
-                                        <path d="M482 152h60q8 0 8 8v704q0 8-8 8h-60q-8 0-8-8V160q0-8 8-8Z" />
-                                        <path d="M192 474h672q8 0 8 8v60q0 8-8 8H160q-8 0-8-8v-60q0-8 8-8Z" />
-                                      </svg>
-                                    </button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </AccordionContent>
-                    </AccordionItem>
-                  </Accordion>
-                </div>
-
-                <div className="py-4">
-                  <div className="flex text-lg">
-                    <div className="flex-1">Tổng :</div>
-                    <div className="text-primary-600">
-                      <b>0đ</b>
+            {/* Schedule Section - Improved */}
+            <AccordionItem value="schedule" className="shadow-md px-4 rounded-lg">
+              <AccordionTrigger className="font-bold text-xl hover:no-underline">
+                Lịch trình sự kiện
+              </AccordionTrigger>
+              <AccordionContent>
+                <Card>
+                  <CardContent className="p-8">
+                    <div className="flex items-center mb-6">
+                      <Clock className="mr-3" size={24} />
+                      <h3 className="text-xl font-medium">
+                        Chương trình 2 ngày thi đấu
+                      </h3>
                     </div>
-                  </div>
-                  <Button
-                    className="btn transition btn-primary w-full mt-2"
-                    disabled
-                    type="button"
-                  >
-                    Đăng ký cá nhân
-                  </Button>
-                  <a
-                    className="btn transition btn-outline btn-primary w-full mt-2 hidden"
-                    href="/vi/group-buy?race_id=125"
-                  >
-                    Đăng ký nhóm
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
+                    <div className="space-y-6">
+                      {schedule.map((item, index) => (
+                        <div
+                          key={index}
+                          className="border rounded-lg p-6 hover:bg-gray-50 transition-colors"
+                        >
+                          <div className="grid md:grid-cols-4 gap-4 items-start">
+                            <div className="space-y-2">
+                              <div className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-bold text-center">
+                                {item.date}
+                              </div>
+                              <div className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-semibold text-center">
+                                {item.time}
+                              </div>
+                            </div>
+                            <div className="md:col-span-1">
+                              <div className="flex items-center space-x-2 text-gray-600 mb-2">
+                                <MapPin size={16} />
+                                <span className="text-sm font-medium">
+                                  {item.location}
+                                </span>
+                              </div>
+                            </div>
+                            <div className="md:col-span-2">
+                              <h4 className="font-medium text-lg mb-2">
+                                {item.event}
+                              </h4>
+                              <p className="text-gray-600 text-sm leading-relaxed">
+                                {item.description}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8">
+                      <h4 className="font-medium text-blue-800 mb-2">
+                        Lưu ý về lịch trình
+                      </h4>
+                      <ul className="text-blue-700 text-sm space-y-1">
+                        <li>
+                          • Lịch trình có thể thay đổi tùy thuộc vào điều kiện
+                          thời tiết
+                        </li>
+                        <li>
+                          • Vận động viên 100K sẽ chạy qua đêm từ 15/12 đến
+                          16/12
+                        </li>
+                        <li>
+                          • Tất cả thông tin cập nhật sẽ được thông báo qua
+                          email và website
+                        </li>
+                        <li>• Vui lòng có mặt đúng giờ theo lịch trình</li>
+                      </ul>
+                    </div>
+                  </CardContent>
+                </Card>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
+        </div>
       </div>
 
       {/* Sponsors and Partners Section */}
